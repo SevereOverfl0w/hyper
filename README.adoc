@@ -1,0 +1,22 @@
+= Hyper
+
+Like link:https://github.com/mlmorg/react-hyperscript[react-hyperscript].
+
+== Usage
+
+[source,clojure]
+----
+(ns my.app
+  (:require
+    [react-dom :as react-dom]
+    [io.dominic.hyper.script :refer [h]]))
+
+(defn mount [el]
+  (react-dom/render
+    (h "div"
+       {:onClick (fn [e] (js/alert "Hi from h"))}
+       "Hello, " "world"
+       (for [i (range 10)]
+         (h "p" {:key i} (str "Line: " i))))
+    el))
+----
