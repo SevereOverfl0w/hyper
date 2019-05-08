@@ -1,6 +1,7 @@
 = Hyper
 
 Like link:https://github.com/mlmorg/react-hyperscript[react-hyperscript] but for Clojure.
+Uses macros to convert your props into blazing fast compile-time maps, no dynamism allowed.
 
 == Usage
 
