@@ -1,6 +1,6 @@
 = Hyper
 
-Like link:https://github.com/mlmorg/react-hyperscript[react-hyperscript].
+Like link:https://github.com/mlmorg/react-hyperscript[react-hyperscript] but for Clojure.
 
 == Usage
 
