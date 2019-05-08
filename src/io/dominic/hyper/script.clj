@@ -46,7 +46,7 @@
 
 (defmacro h
   [tag child-or-props & children]
-  (let [props (if (or (map? child-or-props))
+  (let [props (if (map? child-or-props)
                 (read-js*-fn child-or-props)
                 nil)
         children

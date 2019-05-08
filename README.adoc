@@ -20,3 +20,22 @@ Like link:https://github.com/mlmorg/react-hyperscript[react-hyperscript].
          (h "p" {:key i} (str "Line: " i))))
     el))
 ----
+
+Or use the axe:
+
+[source,clojure]
+----
+(ns my.app
+  (:require
+    [react-dom :as react-dom]
+    [io.dominic.hyper.axe :as ⚔️]))
+
+(defn mount [el]
+  (react-dom/render
+    (⚔️/div
+      {:onClick (fn [e] (js/alert "Hi from h"))}
+      "Hello, " "world"
+      (for [i (range 10)]
+        (⚔️/p {:key i} (str "Line: " i))))
+    el))
+----

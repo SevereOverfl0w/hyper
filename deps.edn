@@ -4,4 +4,11 @@
  :aliases
  {:dev
   {:extra-deps
-   {cljsjs/react {:mvn/version "16.8.3-0"}}}}}
+   {cljsjs/react {:mvn/version "16.8.3-0"}}}
+  :tags
+  {:extra-paths ["tags"]
+   :extra-deps {cheshire {:mvn/version "5.8.1"}}}
+  :tags/generate
+  {:extra-paths ["tags"]
+   :main-opts ["-m" "io.dominic.hyper.tags"]
+   :extra-deps {cheshire {:mvn/version "5.8.1"}}}}}
