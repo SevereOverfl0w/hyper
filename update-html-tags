@@ -1,0 +1,7 @@
+#!/bin/sh
+
+action="$1"
+
+git subtree "$action" --prefix=tags/html-tags https://github.com/sindresorhus/html-tags.git master
+git subtree "$action" --prefix=tags/svg-tags https://github.com/wooorm/svg-tag-names.git master
+git subtree "$action" --prefix=tags/mathml-tags https://github.com/wooorm/mathml-tag-names.git master
