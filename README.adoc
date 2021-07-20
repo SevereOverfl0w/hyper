@@ -29,14 +29,14 @@ Or use the axe:
 (ns my.app
   (:require
     [react-dom :as react-dom]
-    [io.dominic.hyper.axe :as ⚔️]))
+    [io.dominic.hyper.axe :as 🪓️]))
 
 (defn mount [el]
   (react-dom/render
-    (⚔️/div
+    (🪓️/div
       {:onClick (fn [e] (js/alert "Hi from h"))}
       "Hello, " "world"
       (for [i (range 10)]
-        (⚔️/p {:key i} (str "Line: " i))))
+        (🪓️/p {:key i} (str "Line: " i))))
     el))
 ----

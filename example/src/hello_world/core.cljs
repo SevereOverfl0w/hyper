@@ -4,7 +4,7 @@
    [react :as react]
    [react-dom :as react-dom]
    [io.dominic.hyper.script :refer [h]]
-   [io.dominic.hyper.axe :as ⚔️]))
+   [io.dominic.hyper.axe :as 🪓️]))
 
 (println "This text is printed from src/hello_world/core.cljs. Go ahead and edit it and see reloading in action.")
 
@@ -17,7 +17,7 @@
        {:onClick (fn [e] (js/alert "Hi from h"))}
        "Hello, " "world"
        (for [i (range 10)]
-         (⚔️/p {:key i} (str "Line: " i))))
+         (🪓️/p {:key i} (str "Line: " i))))
     el))
 
 (defn mount-app-element []
